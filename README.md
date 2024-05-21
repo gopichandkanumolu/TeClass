@@ -1,7 +1,6 @@
 # TeClass
 
-This repository contains the code and dataset of the research paper titled <b>"TeClass: A Human-Annotated Relevance-based Headline Classification and Generation Dataset for Telugu"</b>, accepted at LREC-COLING 2024.
-
+This repository contains the code and dataset of the research paper titled [**TeClass: A Human-Annotated Relevance-based Headline Classification and Generation Dataset for Telugu**](https://aclanthology.org/2024.lrec-main.1364/), accepted at LREC-COLING 2024.
 # Task Introduction
 **Headline Generation** is the task of generating a relevant headline that represents the core information present in the news article. The key challenge is that, the presence of irrelevant headlines in news articles scraped from the web often results in sub-optimal performance.
 

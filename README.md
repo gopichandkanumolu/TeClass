@@ -23,8 +23,12 @@ It contains 26,178 article-headline pairs annotated for relevance-based headline
 We demonstrate that the task of relevant headline generation is best served when the headline generation models are fine-tuned only highly relevant data even if the highly relevant article-headline pairs are significantly less in number.​
 ​
 # "TeClass" Dataset Statistics
-
-![TeClass_Stats_Table](https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4)
+<p align="center">
+  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/993b42c5-aa32-4cdc-b204-9fff95d7b8ec" width="450" alt="stance_category_bar_plot">
+</p>
+<p align="center">
+  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4" width="900" alt="TeClass_Stats_Table">
+</p>
 
 
 

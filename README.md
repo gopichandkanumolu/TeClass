@@ -27,7 +27,7 @@ We demonstrate that the task of relevant headline generation is best served when
   <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/993b42c5-aa32-4cdc-b204-9fff95d7b8ec" width="400" alt="stance_category_bar_plot">
 </p>
 <p align="center">
-  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4" width="800" alt="TeClass_Stats_Table">
+  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4" width="700" alt="TeClass_Stats_Table">
 </p>
 
 

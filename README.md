@@ -31,8 +31,7 @@ We demonstrate that the task of relevant headline generation is best served when
 </p>
 
 
-
-
+# Headline Classification Model Results
 
 
 

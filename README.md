@@ -4,14 +4,15 @@ This repository contains the code and dataset of the research paper titled <b>"T
 
 # Task Introduction
 **Headline Generation** is the task of generating a relevant headline that represents the core information present in the news article. The key challenge is that, the presence of irrelevant headlines in news articles scraped from the web often results in sub-optimal performance.
-As a solution to overcome this challenge, We propose that <b>Relevance-based Headline Classification</b> can greatly aid the task of generating relevant headlines.
+
+As a solution to overcome this challenge, We propose that **Relevance-based Headline Classification** can greatly aid the task of generating relevant headlines.
 
 **Relevance-based Headline Classification​** is the task of categorizing a news headline based on its relevance to the corresponding news article​ into one of the three primary classes:
   1. Highly Relevant (HREL) : The headline is highly related to the article
   2. Moderately Relevant​ (MREL) :  The headline is moderately related to the article
   3. Least Relevant (LREL) : The headline is least related to the article
     
-It has applications including News Recommendation, Incongruent Headline Detection​​, and Headline Stance Classification​.
+This task has applications including _News Recommendation, Incongruent Headline Detection​​, and Headline Stance Classification​._
 
 
 # Our Key Contributions

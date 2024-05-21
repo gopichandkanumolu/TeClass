@@ -16,10 +16,10 @@ This task has applications including _News Recommendation, Incongruent Headline 
 
 # Our Key Contributions
 
-### We present "TeClass", a large, diverse, and high-quality human annotated dataset for Telugu​. 
+#### We present "TeClass", a large, diverse, and high-quality human annotated dataset for Telugu​. 
 It contains 26,178 article-headline pairs annotated for relevance-based headline classification with one of the three primary categories: ​HREL, MREL, and LREL.
 
-### We study the impact of fine-tuning headline generation models on different types of headlines (with varying degrees of relevance to the article).
+#### We study the impact of fine-tuning headline generation models on different types of headlines (with varying degrees of relevance to the article).
 We demonstrate that the task of relevant headline generation is best served when the headline generation models are fine-tuned only highly relevant data even if the highly relevant article-headline pairs are significantly less in number.​
 ​
 # "TeClass" Dataset Statistics

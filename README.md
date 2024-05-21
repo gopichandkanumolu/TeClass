@@ -7,22 +7,19 @@ This repository contains the code and dataset of the research paper titled <b>"T
 As a solution to overcome this challenge, We propose that <b>Relevance-based Headline Classification</b> can greatly aid the task of generating relevant headlines.
 
 **Relevance-based Headline Classification​** is the task of categorizing a news headline based on its relevance to the corresponding news article​ into one of the three primary classes:
-  1. Highly Relevant (HREL)
-  2. Moderately Relevant​ (MREL)
-  3. Least Relevant (LREL)
+  1. Highly Relevant (HREL) : The headline is highly related to the article
+  2. Moderately Relevant​ (MREL) :  The headline is moderately related to the article
+  3. Least Relevant (LREL) : The headline is least related to the article
     
 It has applications including News Recommendation, Incongruent Headline Detection​​, and Headline Stance Classification​.
 
 
 # Our Key Contributions
 
-### We present "TeClass", a large, diverse, and high-quality human annotated dataset for Telugu​. 
-It contains 26,178 article-headline pairs annotated for relevance-based headline classification with one of the three categories: ​
-  - Highly Related (HREL) ​
-  - Moderately Related (MREL)
-  - Least Related (LREL)​
+#### We present "TeClass", a large, diverse, and high-quality human annotated dataset for Telugu​. 
+It contains 26,178 article-headline pairs annotated for relevance-based headline classification with one of the three categories: ​HREL, MREL, and LREL.
 
-### We study the impact of fine-tuning headline generation models on different types of headlines (with varying degrees of relevance to the article).
+#### We study the impact of fine-tuning headline generation models on different types of headlines (with varying degrees of relevance to the article).
 We demonstrate that the task of relevant headline generation is best served when the headline generation models are fine-tuned only highly relevant data even if the highly relevant article-headline pairs are significantly less in number.​
 ​
 # "TeClass" Dataset Statistics

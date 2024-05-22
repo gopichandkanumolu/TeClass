@@ -131,6 +131,9 @@ We demonstrate that the task of relevant headline generation is best served when
   <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/5ede3f1b-ea4c-4367-8362-2882dd6663f2" width="900" alt="Relevance-based-HG-observations">
 </p>
 
+# Citation
+If you use any of the datasets, models or any part of this research work, please cite the following paper:
 
+[TeClass: A Human-Annotated Relevance-based Headline Classification and Generation Dataset for Telugu](https://aclanthology.org/2024.lrec-main.1364) (Kanumolu et al., LREC-COLING 2024)
 
 Please note: Code & Dataset will be made available very soon.

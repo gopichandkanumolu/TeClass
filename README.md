@@ -25,9 +25,8 @@ We demonstrate that the task of relevant headline generation is best served when
 # "TeClass" Dataset Statistics
 [comment]: # (<p align="center"> <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/993b42c5-aa32-4cdc-b204-9fff95d7b8ec" width="400" alt="stance_category_bar_plot"> </p>)
 
-<p align="center">
-  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4" width="800" alt="TeClass_Stats_Table">
-</p>
+
+<img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/4d831f89-1e80-4261-a6df-430158156af4" width="800" alt="TeClass_Stats_Table">
 
 
 # Headline Classification Model Results
@@ -81,11 +80,9 @@ We demonstrate that the task of relevant headline generation is best served when
 
 # Relevance-based Headline Generation Model Results
 
-<p align="center">
-  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/bd30adf1-a248-445f-a1fa-c9470f459da2" width="900" alt="Relevance-based-HG">
-</p>
-
-
+<img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/bd30adf1-a248-445f-a1fa-c9470f459da2" width="900" alt="Relevance-based-HG">
+<br>
+<br>
 <table>
   <tr>
     <th rowspan="2">Fine-tuned on</th>
@@ -127,9 +124,8 @@ We demonstrate that the task of relevant headline generation is best served when
   <caption><b>ROUGE-L scores of class-based fine-tuning of Headline Generation models.</b></caption>
 </table>
 
-<p align="center">
-  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/5ede3f1b-ea4c-4367-8362-2882dd6663f2" width="900" alt="Relevance-based-HG-observations">
-</p>
+<br>
+<img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/5ede3f1b-ea4c-4367-8362-2882dd6663f2" width="900" alt="Relevance-based-HG-observations">
 
 # License
 Contents of this repository are restricted to only non-commercial research purposes under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Copyright of the dataset contents belongs to the original copyright holders.

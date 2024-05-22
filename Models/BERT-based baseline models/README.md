@@ -1,14 +1,15 @@
+
+#### Packages installation
+```python
 !pip install git+https://github.com/huggingface/transformers
-
-
 !pip install -r './requirements.txt'
-
-
 # os.environ["WANDB_DISABLED"] = "true" # if you are running the code in jupyter notebook (else comment this line)
+```
 
-
+#### Training the models
+```python
 !python './run_classification.py' \
-    --model_name_or_path  microsoft/mdeberta-v3-base \
+    --model_name_or_path  microsoft/mdeberta-v3-base \   # replace it with the model of your choice
     --train_file "../Dataset/TeClass_training_data.csv" \
     --validation_file "../Dataset/TeClass_development_data.csv" \
     --test_file "../Dataset/TeClass_testing_data.csv" \
@@ -33,8 +34,10 @@
     --save_safetensors False \
     --overwrite_output_dir True | tee logs.txt
 
+```
 
-
+#### Inference
+```python
 from transformers import AutoTokenizer, AutoModelForSequenceClassification, AutoConfig
 import torch
 
@@ -71,3 +74,5 @@ def hc_demo(headline, article):
                                'LREL':'Least Related'}
     #print(predicted_class_label)
     return predicted_class_label_map[predicted_class_label]
+
+```

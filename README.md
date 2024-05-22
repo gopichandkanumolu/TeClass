@@ -131,6 +131,9 @@ We demonstrate that the task of relevant headline generation is best served when
   <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/5ede3f1b-ea4c-4367-8362-2882dd6663f2" width="900" alt="Relevance-based-HG-observations">
 </p>
 
+# License
+Contents of this repository are restricted to only non-commercial research purposes under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0). Copyright of the dataset contents belongs to the original copyright holders.
+
 # Citation
 If you use any of the datasets, models or any part of this research work, please cite the following paper:
 

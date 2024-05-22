@@ -31,11 +31,55 @@ We demonstrate that the task of relevant headline generation is best served when
 
 
 # Headline Classification Model Results
+### Feature-based Machine Learning Models
+<table style="width: 50%; height: 50%;">
+  <tr><th rowspan="2">Feature Vector</th><th rowspan="2">Classifier</th><th colspan="5">F1-Score</th></tr>
+  <tr><th>HREL</th><th>MREL</th><th>LREL</th><th>Overall <br> (Weighted)</th><th>Overall <br> (Macro)</th></tr>
+  <tr><td rowspan="4">Without Feature Vector</td><td>LR</td><td>0.57</td><td>0.50</td><td>0.59</td><td>0.55</td><td>0.55</td></tr>
+  <tr><td>SVM</td><td>0.55</td><td>0.49</td><td>0.57</td><td>0.53</td><td>0.54</td></tr>
+  <tr><td>MLP</td><td>0.55</td><td>0.49</td><td>0.58</td><td>0.54</td><td>0.54</td></tr>
+  <tr><td>Bagging</td><td>0.55</td><td>0.47</td><td>0.57</td><td>0.52</td><td>0.53</td></tr>
+  <tr><td rowspan="4">Cosine Similarity</td><td>LR</td><td>0.58</td><td>0.50</td><td>0.59</td><td>0.55</td><td>0.56</td></tr>
+  <tr><td>SVM</td><td>0.56</td><td>0.49</td><td>0.58</td><td>0.54</td><td>0.54</td></tr>
+  <tr><td>MLP</td><td>0.56</td><td>0.49</td><td>0.56</td><td>0.53</td><td>0.54</td></tr>
+  <tr><td>Bagging</td><td>0.56</td><td>0.47</td><td>0.58</td><td>0.53</td><td>0.54</td></tr>
+  <tr><td rowspan="4">[Cosine Similarity, LEAD-1, Novel 1-gram %]</td><td>LR</td><td>0.61</td><td>0.53</td><td>0.59</td><td><b>0.58</b></td><td><b>0.58</b></td></tr>
+  <tr><td>SVM</td><td>0.60</td><td>0.52</td><td>0.58</td><td>0.57</td><td>0.57</td></tr>
+  <tr><td>MLP</td><td>0.60</td><td>0.54</td><td>0.55</td><td>0.56</td><td>0.56</td></tr>
+  <tr><td>Bagging</td><td>0.60</td><td>0.51</td><td>0.59</td><td>0.56</td><td>0.57</td></tr>
+  <tr><td rowspan="4">[Cosine Similarity, LEAD-1, Novel 1-gram %, Novel 2-gram %, EXT-ORACLE]</td><td>LR</td><td>0.62</td><td>0.53</td><td>0.59</td><td><b>0.58</b></td><td><b>0.58</b></td></tr>
+  <tr><td>SVM</td><td>0.60</td><td>0.52</td><td>0.58</td><td>0.57</td><td>0.57</td></tr>
+  <tr><td>MLP</td><td>0.60</td><td>0.50</td><td>0.61</td><td>0.56</td><td>0.57</td></tr>
+  <tr><td>Bagging</td><td>0.60</td><td>0.51</td><td>0.58</td><td>0.56</td><td>0.56</td></tr>
+</table>
 
-<table style="width: 50%; height: 50%;"><tr><th rowspan="2">Feature Vector</th><th rowspan="2">Classifier</th><th colspan="5">F1-Score</th></tr><tr><th>HREL</th><th>MREL</th><th>LREL</th><th>Overall <br> (Weighted)</th><th>Overall <br> (Macro)</th></tr><tr><td rowspan="4">Without Feature Vector</td><td>LR</td><td>0.57</td><td>0.50</td><td>0.59</td><td>0.55</td><td>0.55</td></tr><tr><td>SVM</td><td>0.55</td><td>0.49</td><td>0.57</td><td>0.53</td><td>0.54</td></tr><tr><td>MLP</td><td>0.55</td><td>0.49</td><td>0.58</td><td>0.54</td><td>0.54</td></tr><tr><td>Bagging</td><td>0.55</td><td>0.47</td><td>0.57</td><td>0.52</td><td>0.53</td></tr><tr><td rowspan="4">Cosine Similarity</td><td>LR</td><td>0.58</td><td>0.50</td><td>0.59</td><td>0.55</td><td>0.56</td></tr><tr><td>SVM</td><td>0.56</td><td>0.49</td><td>0.58</td><td>0.54</td><td>0.54</td></tr><tr><td>MLP</td><td>0.56</td><td>0.49</td><td>0.56</td><td>0.53</td><td>0.54</td></tr><tr><td>Bagging</td><td>0.56</td><td>0.47</td><td>0.58</td><td>0.53</td><td>0.54</td></tr><tr><td rowspan="4">[Cosine Similarity, LEAD-1, Novel 1-gram %]</td><td>LR</td><td>0.61</td><td>0.53</td><td>0.59</td><td>0.58</td><td>0.58</td></tr><tr><td>SVM</td><td>0.60</td><td>0.52</td><td>0.58</td><td>0.57</td><td>0.57</td></tr><tr><td>MLP</td><td>0.60</td><td>0.54</td><td>0.55</td><td>0.56</td><td>0.56</td></tr><tr><td>Bagging</td><td>0.60</td><td>0.51</td><td>0.59</td><td>0.56</td><td>0.57</td></tr><tr><td rowspan="4">[Cosine Similarity, LEAD-1, Novel 1-gram %, Novel 2-gram %, EXT-ORACLE]</td><td>LR</td><td>0.62</td><td>0.53</td><td>0.59</td><td>0.58</td><td>0.58</td></tr><tr><td>SVM</td><td>0.60</td><td>0.52</td><td>0.58</td><td>0.57</td><td>0.57</td></tr><tr><td>MLP</td><td>0.60</td><td>0.50</td><td>0.61</td><td>0.56</td><td>0.57</td></tr><tr><td>Bagging</td><td>0.60</td><td>0.51</td><td>0.58</td><td>0.56</td><td>0.56</td></tr></table>
+
+### Fine-tuning Pre-trained BERT-based Models
+
+#### Three Class Classification
+<table>
+  <tr><th rowspan="2">Pre-trained Model</th><th colspan="5">F1 Score</th></tr>
+  <tr><th>HREL</th><th>MREL</th><th>LREL</th><th>Overall <br> (Weighted)</th><th>Overall <br> (Macro)</th></tr>
+  <tr><td>IndicBERT</td><td>0.66</td><td>0.55</td><td>0.67</td><td>0.62</td><td>0.63</td></tr>
+  <tr><td>mBERT</td><td>0.66</td><td>0.5</td><td>0.62</td><td>0.59</td><td>0.59</td></tr>
+  <tr><td>mDeBERTa</td><td>0.65</td><td>0.59</td><td>0.67</td><td><b>0.63</b></td><td><b>0.64</b></td></tr>
+  <tr><td>MuRIL</td><td>0.66</td><td>0.55</td><td>0.62</td><td>0.61</td><td>0.61</td></tr>
+  <tr><td>XLMRoBERTa</td><td>0.67</td><td>0.53</td><td>0.65</td><td>0.61</td><td>0.62</td></tr>
+</table>
+
+#### Two Class Classfication
+<table>
+  <tr><th rowspan="2">Pre-trained model</th><th colspan="4">F1-Score</th></tr>
+  <tr><th>Relevant<br>(FME+STC+FSE)</th><th>Less Relevant<br>(WKC+MLC+SEN+CBT)</th><th>Overall<br>(Weighted)</th><th>Overall<br>(Macro)</th></tr>
+  <tr><td>IndicBERT</td><td>0.86</td><td>0.66</td><td>0.79</td><td>0.76</td></tr>
+  <tr><td>mBERT</td><td>0.86</td><td>0.63</td><td>0.78</td><td>0.74</td></tr>
+  <tr><td>mDeBERTa</td><td>0.85</td><td>0.69</td><td><b>0.80</b></td><td><b>0.77</b></td></tr>
+  <tr><td>MuRIL</td><td>0.73</td><td>0.63</td><td>0.70</td><td>0.68</td></tr>
+  <tr><td>XLMRoBERTa</td><td>0.86</td><td>0.68</td><td><b>0.80</b></td><td><b>0.77</b></td></tr>
+</table>
 
 
-
+# Relevance-based Headline Generation Model Results
 
 
 

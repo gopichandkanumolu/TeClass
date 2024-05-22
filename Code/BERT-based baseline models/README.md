@@ -74,5 +74,8 @@ def hc_demo(headline, article):
                                'LREL':'Least Related'}
     #print(predicted_class_label)
     return predicted_class_label_map[predicted_class_label]
-
+headline = "" # enter the headline text here
+article  = "" # enter the article text here
+predicted_class = hc_demo(headline, article)
+print(predicted_class)
 ```

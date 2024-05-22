@@ -81,7 +81,55 @@ We demonstrate that the task of relevant headline generation is best served when
 
 # Relevance-based Headline Generation Model Results
 
+<p align="center">
+  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/bd30adf1-a248-445f-a1fa-c9470f459da2" width="900" alt="Relevance-based-HG">
+</p>
 
+
+<table>
+  <tr>
+    <th rowspan="2">Fine-tuned on</th>
+    <th colspan="6">Tested on</th>
+  </tr>
+  <tr>
+    <th>FME</th><th>STC</th><th>FSE</th><th>WKC</th><th>SEN</th><th>CBT</th>
+  </tr>
+  <tr>
+    <td>Zero-shot inference <br> (Mukhyansh)</td><td>0.39</td><td>0.23</td><td>0.25</td><td>0.17</td><td>0.21</td><td>0.15</td>
+  </tr>
+  <tr>
+    <td>FME</td><td>0.45</td><td>0.28</td><td>0.31</td><td>0.21</td><td>0.25</td><td>0.17</td>
+  </tr>
+  <tr>
+    <td>STC</td><td>0.43</td><td>0.27</td><td>0.3</td><td>0.22</td><td>0.23</td><td>0.18</td>
+  </tr>
+  <tr>
+    <td>FSE</td><td>0.41</td><td>0.26</td><td>0.29</td><td>0.22</td><td>0.23</td><td>0.18</td>
+  </tr>
+  <tr>
+    <td>WKC</td><td>0.38</td><td>0.23</td><td>0.28</td><td>0.2</td><td>0.21</td><td>0.15</td>
+  </tr>
+  <tr>
+    <td>SEN</td><td>0.41</td><td>0.26</td><td>0.29</td><td>0.2</td><td>0.23</td><td>0.18</td>
+  </tr>
+  <tr>
+    <td>CBT</td><td>0.39</td><td>0.24</td><td>0.27</td><td>0.21</td><td>0.22</td><td>0.16</td>
+  </tr>
+  <tr>
+    <td>Total (6-class)</td><td>0.43</td><td>0.27</td><td>0.3</td><td>0.22</td><td>0.25</td><td>0.18</td>
+  </tr>
+  <tr>
+    <td>3-class (FME, FSE, STC)</td><td>0.44</td><td>0.28</td><td>0.3</td><td>0.2</td><td>0.25</td><td>0.2</td>
+  </tr>
+  <tr>
+    <td>3-class (WKC, SEN, CBT)</td><td>0.4</td><td>0.25</td><td>0.29</td><td>0.19</td><td>0.23</td><td>0.18</td>
+  </tr>
+  <caption><b>ROUGE-L scores of class-based fine-tuning of Headline Generation models.</b></caption>
+</table>
+
+<p align="center">
+  <img src="https://github.com/gopichandkanumolu/TeClass/assets/54239600/c32c4cc8-c895-444d-a7d4-33ceee9b3a51" width="900" alt="Relevance-based-HG-observations">
+</p>
 
 
 

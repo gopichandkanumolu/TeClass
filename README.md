@@ -139,4 +139,3 @@ If you use any of the datasets, models or any part of this research work, please
 
 [TeClass: A Human-Annotated Relevance-based Headline Classification and Generation Dataset for Telugu](https://aclanthology.org/2024.lrec-main.1364) (Kanumolu et al., LREC-COLING 2024)
 
-Please note: Code & Dataset will be made available very soon.
